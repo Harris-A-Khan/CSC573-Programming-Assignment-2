@@ -1,0 +1,5 @@
+protocol,count
+ip,10310
+tcp,823
+udp,9464
+dns,142
