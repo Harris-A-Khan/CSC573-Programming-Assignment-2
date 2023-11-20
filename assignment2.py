@@ -10,7 +10,7 @@ from socket import socket, AF_PACKET, SOCK_RAW, htons
 ALL_PROTOCOLS = 0x0003
 
 # Create a low-level socket that listens to all packets on the machine
-rawSocket = socket(AF_PACKET, SOCK_RAW, socket.htons(ALL_PROTOCOLS))
+rawSocket = socket(AF_PACKET, SOCK_RAW)
 
 
 def main(): 
