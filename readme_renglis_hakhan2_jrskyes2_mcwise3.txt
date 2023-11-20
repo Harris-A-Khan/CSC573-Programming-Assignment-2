@@ -14,6 +14,6 @@ pip install scapy or pip3 install scapy
 
 4) Run the following command to run the program:
 
-python3 sniffer_renglis_hakhan2_jrskyes2_mcwise3.py
+sudo python3 sniffer_renglis_hakhan2_jrskyes2_mcwise3.py
 
 The program is running!

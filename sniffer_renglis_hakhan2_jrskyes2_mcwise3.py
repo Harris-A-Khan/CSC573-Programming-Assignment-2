@@ -34,7 +34,6 @@ def main():
     for protocol, count in protocol_counts.items():
         print(f"{protocol}: {count}")
 
-    # TODO: properly name the files with everyones unity ID
     print("Writing to file...")
     with open('sniffer_renglis_hakhan2_jrskyes2_mcwise3.csv', 'w') as file: 
         file.write("protocol,count\n")
