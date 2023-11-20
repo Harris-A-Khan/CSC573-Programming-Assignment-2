@@ -19,7 +19,7 @@ def main():
     protocol_counts = {'IP': 0, 'TCP': 0, 'UDP': 0, 'DNS': 0}
 
     # Run sniff for a specific duration
-    duration = 5  # Duration in seconds
+    duration = 4  # Duration in seconds
     sniff(timeout=duration, prn=process_packet)
     
     # Let the user know we're finished sniffing 
@@ -28,6 +28,15 @@ def main():
     print("Protocol counts:")
     for protocol, count in protocol_counts.items():
         print(f"{protocol}: {count}")
+
+    print("Writing to file...")
+    with open('sniffer.csv', 'w') as file: 
+        file.write("protocol,count\n")
+        for protocol, count in protocol_counts.items():
+            file.write(f"{protocol.lower()},{count}\n")
+
+
+    print("Done.")
 
 if __name__ == "__main__":
     main()
